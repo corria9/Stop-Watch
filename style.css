@@ -1,0 +1,37 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+ } 
+
+body {
+	
+	font-weight:300;
+	/*background:linear-gradient(to bottom, gray, #d459cb);*/
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:100vh;
+}
+
+.wrap {
+	display:inline-block;
+	min-width:360px;
+	max-height:400px;
+	padding:50px 15px;
+	background-color:#fff;
+	box-shadow:0 5px 25px #0000004a;
+	border-radius:8px;
+	text-align:center;
+	
+}
+
+#timer {
+	position:relative;
+	
+	/*line-height:250px;*/
+	border-radius:50%;
+	font-size:32px;
+	margin:o auto;
+	background-color:#fff;
+}
