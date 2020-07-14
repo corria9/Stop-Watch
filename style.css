@@ -48,6 +48,17 @@ p {
 	margin:0 10px;
 }
 
+#play, #reset {
+	width:55px;
+	heigth:55px;
+	line-height:55px;
+	border-radius:50px;
+	color:#fff;
+	background:linear-gradient(45deg, #ff88fb, #ff00ec);
+	box-shadow:0 8px 25px #bf5fc045, 0 8px 25px #ff00ec50;
+	transition:all ease 0.1s;
+}
+
 /*  Circle animation*/
 #timer svg {
 	position:absolute;
