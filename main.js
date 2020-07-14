@@ -81,9 +81,23 @@ function resetFunc () {
 	$("#second").text("00");
 	$("#minute").text("00");
 	$("#hour").text("00");
+	
+	if(!$("#play").hasClass("pause")){
+		$("#animateCircle).removeClass("addAnimation");
+	} else {
+		$("#animateCircle).removeClass("addAnimation");
+		  setTimeout (function(){
+			$("#animateCircle).addClass("addAnimation");
+		}, 10);
+	}
 }
 
 function stopFunc () {
 	clearInterval(base);
 	resetFunc();
+	
+	if($("#play").hasClass("#pause")){
+		$("#animateCircle").removeClass("addAnimation");
+		playFunc();
+	}
 }
