@@ -26,6 +26,13 @@ body {
 	
 }
 
+@media (max-width: 600px) {
+  .wrap {
+    margin-bottom:75px;
+  }
+}
+
+
 #timer {
 	position:relative;
 	
