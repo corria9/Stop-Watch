@@ -89,7 +89,7 @@ function resetFunc () {
 	//	  setTimeout (function(){
 	//		$("#animateCircle).addClass("addAnimation");
 	//	}, 10);
-	}
+	//}
 }
 
 function stopFunc () {
