@@ -99,5 +99,5 @@ function stopFunc () {
 	//if($("#play").hasClass("#pause")){
 	//	$("#animateCircle").removeClass("addAnimation");
 	//	playFunc();
-	}
+	//}
 }
