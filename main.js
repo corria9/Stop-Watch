@@ -34,7 +34,7 @@ var minuteVal = 0;
 var hourVal = 0;
 
 function timer () {
-	millisecondValue = updateTime(millisecond);	
+	millisecondVal = updateTime(millisecond);	
 	secondVal = updateTime(second);
 	minuteVal = updateTime(minute);
 	hourVal = updateTime(hour);
@@ -60,7 +60,7 @@ function timer () {
 }
 
 //update every second millisecond
-function updateTime () {
+function updateTime (i) {
 	if (i < 10) {
 		i = "0" + i;
 	}
