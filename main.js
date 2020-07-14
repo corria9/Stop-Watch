@@ -2,10 +2,10 @@ var base;
 var playPause = 0;
 
 function playFunc () {
-	play ();
 	playPause = playPause + 1;
 
 	if (playPause === 1){
+		play ();
 		document.getElementById("play").classList.add("pause");
 	} else if (playPause === 2) {
 		document.getElementById("play").classList.remove("pause");
