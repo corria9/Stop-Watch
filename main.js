@@ -7,8 +7,11 @@ function playFunc () {
 	if (playPause === 1){
 		play ();
 		document.getElementById("play").classList.add("pause");
+		$("#animateCircle").addClass("addAnimation");
+		$("#animateCircle.addAnimation").css("animation-play-state", "running");
 	} else if (playPause === 2) {
 		document.getElementById("play").classList.remove("pause");
+		$("#animateCircle").css("animation-play-state", "paused");
 		playPause = 0;
 		stop();
 	}
