@@ -54,7 +54,7 @@ p {
 	line-height:55px;
 	border-radius:50px;
 	color:#fff;
-	background:linear-gradient(45deg, #ff88fb, #ff00ec);
+	background:linear-gradient(45deg, #85C1E9, #2874A6 );
 	box-shadow:0 8px 25px #bf5fc045, 0 8px 25px #ff00ec50;
 	transition:all ease 0.1s;
 }
