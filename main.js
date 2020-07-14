@@ -96,8 +96,4 @@ function stopFunc () {
 	clearInterval(base);
 	resetFunc();
 	
-	//if($("#play").hasClass("#pause")){
-	//	$("#animateCircle").removeClass("addAnimation");
-	//	playFunc();
-	//
 }
