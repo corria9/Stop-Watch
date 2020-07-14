@@ -59,6 +59,16 @@ p {
 	transition:all ease 0.1s;
 }
 
+#stop {
+	padding:15px 20px;
+	border-radius:50px;
+	color:#fff;
+	font-weight:400;
+	background:linear-gradient(45deg, #607d8b,#ff00ec);
+	box-shadow:0 8px 25px #bf5fc045, 0 8px 25px #ff00ec50;
+	transition:all ease 0.1s;
+}
+
 /*  Circle animation*/
 #timer svg {
 	position:absolute;
