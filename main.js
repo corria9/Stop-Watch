@@ -15,12 +15,59 @@ function playFunc () {
 }
 
 function play () {
-	
+	base = setInterval (timer, 10); // milliseconds
 }
 
 function stop () {
-	
+	clearInterval(base);
 }
 
 var millisecond = 0;
 var second = 0;
+var minute = 0;
+var hour = 0;
+
+//Return value
+var millisecondVal = 0;
+var secondVal = 0;
+var minuteVal = 0;
+var hourVal = 0;
+
+function timer () {
+	millisecondValue = updateTime(millisecond);	
+	secondVal = updateTime(second);
+	minuteVal = updateTime(minute);
+	hourVal = updateTime(hour);
+	
+	millisecond = ++millisecond;
+	
+	if (millisecond === 100) {
+		millisecond = 0;
+		second = ++second;
+	}
+	if (second == 60) {
+		minute = ++minute;
+		second = 0;
+	}
+	 if (minute == 60) {
+		minute = 0;
+		hour = ++hour; 
+	}
+	$("#millisecond").text(millisecondVal);
+	$("#second").text(secondVal);
+	$("#minute").text(minuteVal);
+	$("#hour").text(hourVal);
+}
+
+//update every second millisecond
+function updateTime () {
+	if (i < 10) {
+		i = "0" + i;
+	}
+	return i;
+}
+
+
+function resetFunc () {
+	
+}
