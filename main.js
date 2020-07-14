@@ -69,5 +69,18 @@ function updateTime () {
 
 
 function resetFunc () {
+	millisecond = 0;
+	second = 0;
+	minute = 0;
+	hour = 0;
 	
+	$("#millisecond").text("00");
+	$("#second").text("00");
+	$("#minute").text("00");
+	$("#hour").text("00");
+}
+
+function stopFunc () {
+	clearInterval(base);
+	resetFunc();
 }
