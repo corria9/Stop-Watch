@@ -35,3 +35,25 @@ body {
 	margin:o auto;
 	background-color:#fff;
 }
+
+/*  Circle animation*/
+#timer svg {
+	position:absolute;
+	left:0;
+}
+
+#animateCircle.addAnimation {
+	stroke-dasharray:770;
+	stoke-dashoffset:770;
+	animation:animateCircle 60s linear infinite;
+	animation-play-state:paused;
+}
+
+@keyframes animateCircle {
+	from {
+		stroke-dashoffset:0;		
+	}
+}
+.defaultCircle {
+	opacity:.3;
+}
