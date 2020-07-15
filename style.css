@@ -28,9 +28,15 @@ body {
 
 @media (max-width: 600px) {
   .wrap {
-    margin-bottom:75px;
+    margin-bottom:10px;
   }
 }
+
+@media (max-width: 900px) {
+	.wrap {
+	  margin-bottom:10px;
+	}
+  }
 
 
 #timer {
@@ -40,7 +46,11 @@ body {
 	border-radius:50%;
 	font-size:32px;
 	margin:o auto;
-	background-color:#fff;
+	color:#8ac0e3;
+}
+
+#timer:hover {
+	color:#3b95d0;
 }
 
 p {
@@ -57,11 +67,11 @@ p {
 
 #play, #reset {
 	width:55px;
-	heigth:55px;
+	height:55px;
 	line-height:55px;
 	border-radius:50px;
 	color:#fff;
-	background:linear-gradient(45deg, #85C1E9, #2874A6 );
+	background:linear-gradient(45deg, #85C1E9, #194968 );
 	box-shadow:0 8px 25px #AED6F1, 0 8px 25px #85C1E9 ;
 	transition:all ease 0.1s;
 }
@@ -71,29 +81,7 @@ p {
 	border-radius:50px;
 	color:#fff;
 	font-weight:400;
-	background:linear-gradient(45deg, #85C1E9,#2874A6);
+	background:linear-gradient(45deg, #85C1E9, #194968);
 	box-shadow:0 8px 25px #AED6F1, 0 8px 25px #85C1E9 ;
 	transition:all ease 0.1s;
-}
-
-/*  Circle animation*/
-#timer svg {
-	position:absolute;
-	left:0;
-}
-
-#animateCircle.addAnimation {
-	stroke-dasharray:770;
-	stoke-dashoffset:770;
-	animation:animateCircle 60s linear infinite;
-	animation-play-state:paused;
-}
-
-@keyframes animateCircle {
-	from {
-		stroke-dashoffset:0;		
-	}
-}
-.defaultCircle {
-	opacity:.3;
 }
